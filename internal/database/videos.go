@@ -122,6 +122,7 @@ func (c Client) GetVideo(id uuid.UUID) (Video, error) {
 }
 
 func (c Client) UpdateVideo(video Video) error {
+	// fmt.Printf("Hello VIDEO THUMBNAIL %s", *video.ThumbnailURL)
 	query := `
 	UPDATE videos
 	SET
